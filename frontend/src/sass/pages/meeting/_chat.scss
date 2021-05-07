@@ -1,0 +1,47 @@
+.chat {
+  //   height: 100%;
+  //   height: 35.5rem;
+  position: absolute;
+  top: 10rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  &-individual {
+    padding: 1rem 2rem 0;
+
+    &:last-child {
+      padding: 1rem 2rem 1rem;
+    }
+    color: $black;
+    .header {
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 1rem;
+      p {
+        font-weight: bold;
+        margin-right: 1rem;
+      }
+      span {
+        font-size: 0.95rem;
+        color: $grey;
+      }
+    }
+    .message {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}

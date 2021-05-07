@@ -1,0 +1,42 @@
+.landing-content {
+  @include setVerticalCenter;
+  display: flex;
+  padding: 0 5rem;
+  justify-content: space-between;
+
+  &-action {
+    flex: 1;
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.6rem;
+      color: $grey;
+      margin-bottom: 5rem;
+    }
+
+    hr {
+      width: 75%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-image {
+    flex: 1;
+    position: relative;
+    img {
+      width: 35rem;
+      @include absCenter;
+    }
+  }
+
+  &-footer {
+    font-size: 1.3rem !important;
+    margin-bottom: 0 !important;
+    span {
+      color: $green;
+    }
+  }
+}

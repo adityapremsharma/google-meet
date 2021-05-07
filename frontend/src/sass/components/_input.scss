@@ -1,0 +1,56 @@
+.input-primary {
+  padding: 1rem;
+  border: 1px solid $grey;
+  border-radius: 3px;
+  i {
+    font-size: 1.3rem;
+    color: $grey;
+    margin-right: 1rem;
+  }
+  input,
+  input:focus,
+  input:active {
+    outline: none;
+    border: none;
+  }
+  ::placeholder {
+    color: $grey;
+  }
+  margin-right: 2rem;
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  box-shadow: 1px 1px 10px rgba($grey, 0.5);
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    // font-weight: 500;
+    border-bottom: 2px solid transparent;
+    line-height: 1.6rem;
+
+    &::placeholder {
+      color: $grey;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $green;
+    }
+  }
+  i {
+    transform: rotate(40deg);
+    margin-left: 1rem;
+    color: $green;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.meeting {
+  height: 100vh;
+  background-color: $black;
+  video {
+    // height: calc(100vh - 7rem);
+    // width: 100%;
+    // object-fit: cover;
+    // position: absolute;
+    // color: $black;
+    height: 15rem;
+    width: 20rem;
+  }
+}

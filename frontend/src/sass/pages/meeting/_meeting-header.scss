@@ -1,0 +1,33 @@
+.meeting-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $white;
+  height: 3.8rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: $grey;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+
+  .time {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 2rem;
+    h2 {
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+  .profile {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 2rem;
+    }
+  }
+}
